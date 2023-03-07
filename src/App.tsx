@@ -1,9 +1,12 @@
 import { Container } from "./components/Container"
+import { Content } from "./components/Content"
 
 function App() {
   return (
     <Container>
-      Hello World
+      <Content>
+        Hello World
+      </Content>
     </Container>
   )
 }
