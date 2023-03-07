@@ -9,12 +9,20 @@ function App() {
       <Content>
         <Box direction="column" gap="60">
           <Box justify="between" align="center" gap="32">
-            <Board />
-            <Board />
-            <Board />
+            <Board title="Title example">
+              Content
+            </Board>
+            <Board title="Title example">
+              Content
+            </Board>
+            <Board title="Title example">
+              Content
+            </Board>
           </Box>
 
-          <Board />
+          <Board title="Title example">
+            Content
+          </Board>
         </Box>
       </Content>
     </Container>
