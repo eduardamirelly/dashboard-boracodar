@@ -13,10 +13,21 @@ export const Box = styled('div', {
       center: {
         justifyContent: 'center',
       },
+      between: {
+        justifyContent: 'space-between',
+      },
     },
     align: {
       center: {
         alignItems: 'center',
+      },
+    },
+    gap: {
+      32: {
+        gap: '2rem',
+      },
+      60: {
+        gap: '3.75rem',
       },
     },
   },

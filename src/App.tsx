@@ -1,3 +1,5 @@
+import { Board } from "./components/Board"
+import { Box } from "./components/Box"
 import { Container } from "./components/Container"
 import { Content } from "./components/Content"
 
@@ -5,7 +7,15 @@ function App() {
   return (
     <Container>
       <Content>
-        Hello World
+        <Box direction="column" gap="60">
+          <Box justify="between" align="center" gap="32">
+            <Board />
+            <Board />
+            <Board />
+          </Box>
+
+          <Board />
+        </Box>
       </Content>
     </Container>
   )
