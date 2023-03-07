@@ -1,9 +1,20 @@
+import { ReactNode } from "react";
+import { Heading } from "../Heading";
 import { BoardContainer } from "./styles";
 
-export function Board() {
+interface BoardProps {
+  title: string;
+  children: ReactNode;
+}
+
+export function Board({ title, children }: BoardProps) {
   return (
     <BoardContainer>
-      Board
+      <Heading>
+        {title}
+      </Heading>
+
+      {children}
     </BoardContainer>
   )
 }
