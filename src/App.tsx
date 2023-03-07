@@ -1,8 +1,10 @@
+import { Container } from "./components/Container"
+
 function App() {
   return (
-    <div>
-      Hello World!
-    </div>
+    <Container>
+      Hello World
+    </Container>
   )
 }
 
