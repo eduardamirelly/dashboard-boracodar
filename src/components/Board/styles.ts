@@ -7,4 +7,20 @@ export const BoardContainer = styled('div', {
 
   paddingBlock: '3rem',
   paddingInline: '2rem',
+
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  gap: '2rem',
+
+  variants: {
+    align: {
+      center: {
+        alignItems: 'center',
+      },
+      start: {
+        alignItems: 'flex-start',
+      },
+    },
+  },
 });
