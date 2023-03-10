@@ -6,6 +6,7 @@ import { Text } from "./components/Text"
 
 import smileSvg from './assets/smile.svg';
 import { Heading } from "./components/Heading"
+import { CircleProgress } from "./components/CircleProgress"
 
 function App() {
   return (
@@ -30,16 +31,26 @@ function App() {
                 </Text>
               </Box>
             </Board>
-            <Board title="Title example">
-              Content
+            <Board title="Vendas fechadas">
+              <CircleProgress />
 
-              <Box gap="10">
-                <Text weight="medium">
-                  NPS Score
-                </Text>
-                <Text>
-                  75
-                </Text>
+              <Box gap="20">
+                <Box gap="10">
+                  <Text weight="medium">
+                    Esperado
+                  </Text>
+                  <Text>
+                    100
+                  </Text>
+                </Box>
+                <Box gap="10">
+                  <Text weight="medium">
+                    Alcançado
+                  </Text>
+                  <Text>
+                    70
+                  </Text>
+                </Box>
               </Box>
             </Board>
             <Board title="Title example">
