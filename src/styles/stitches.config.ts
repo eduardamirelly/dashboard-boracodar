@@ -17,6 +17,7 @@ export const { css, styled, theme } = createStitches({
     colors: {
       violetDark: '#292738',
       violetMedium: '#363447',
+      violetLight: '#D9D9D9',
       white: '#ffffff',
       green: '#81FBB8',
     },
