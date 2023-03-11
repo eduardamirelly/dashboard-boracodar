@@ -8,11 +8,12 @@ export const BoardContainer = styled('div', {
   paddingBlock: '3rem',
   paddingInline: '2rem',
 
-  width: '296px',
+  minWidth: '296px',
+  width: '100%',
 
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+  justifyContent: 'space-between',
   gap: '2rem',
 
   variants: {
