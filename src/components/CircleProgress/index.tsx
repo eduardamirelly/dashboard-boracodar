@@ -1,7 +1,13 @@
+import { CircleProgressContainer, CircleProgressContent, CircleProgressValue } from "./styles";
+
 export function CircleProgress() {
   return (
-    <div>
-      Circle Progress
-    </div>
+    <CircleProgressContainer>
+      <CircleProgressContent>
+        <CircleProgressValue>
+          44%
+        </CircleProgressValue>
+      </CircleProgressContent>
+    </CircleProgressContainer>
   )
 }
