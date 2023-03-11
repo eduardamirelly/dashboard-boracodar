@@ -21,6 +21,9 @@ export const Box = styled('div', {
       center: {
         alignItems: 'center',
       },
+      stretch: {
+        alignItems: 'stretch',
+      },
     },
     gap: {
       10: {
