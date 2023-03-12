@@ -9,6 +9,9 @@ import { CircleProgress } from "./components/CircleProgress"
 import smileSvg from './assets/smile.svg';
 import triangleUpSvg from './assets/triangle-up.svg';
 import triangleDownSvg from './assets/triangle-down.svg';
+import ellipseDark from './assets/ellipse-dark.svg';
+import ellipseViolet from './assets/ellipse-violet.svg';
+import ellipsePurple from './assets/ellipse-purple.svg';
 
 
 function App() {
@@ -39,17 +42,23 @@ function App() {
 
               <Box gap="20">
                 <Box gap="10">
-                  <Text weight="medium">
-                    Esperado
-                  </Text>
+                  <Box gap="6" align="center">
+                    <img src={ellipseDark} alt="ellipse dark" />
+                    <Text weight="medium">
+                      Esperado
+                    </Text>
+                  </Box>
                   <Text>
                     100
                   </Text>
                 </Box>
                 <Box gap="10">
-                  <Text weight="medium">
-                    Alcançado
-                  </Text>
+                  <Box gap="6" align="center">
+                    <img src={ellipseViolet} alt="ellipse dark" />
+                    <Text weight="medium">
+                      Alcançado
+                    </Text>
+                  </Box>
                   <Text>
                     70
                   </Text>
@@ -61,17 +70,23 @@ function App() {
 
               <Box gap="20">
                 <Box gap="10">
-                  <Text weight="medium">
-                    Esperado
-                  </Text>
+                  <Box gap="6" align="center">
+                    <img src={ellipseDark} alt="ellipse dark" />
+                    <Text weight="medium">
+                      Esperado
+                    </Text>
+                  </Box>
                   <Text>
                     R$ 70K
                   </Text>
                 </Box>
                 <Box gap="10">
-                  <Text weight="medium">
-                    Alcançado
-                  </Text>
+                  <Box gap="6" align="center">
+                    <img src={ellipsePurple} alt="ellipse dark" />
+                    <Text weight="medium">
+                      Alcançado
+                    </Text>
+                  </Box>
                   <Text>
                     R$ 63K
                   </Text>
