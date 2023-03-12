@@ -3,10 +3,13 @@ import { Box } from "./components/Box"
 import { Container } from "./components/Container"
 import { Content } from "./components/Content"
 import { Text } from "./components/Text"
-
-import smileSvg from './assets/smile.svg';
 import { Heading } from "./components/Heading"
 import { CircleProgress } from "./components/CircleProgress"
+
+import smileSvg from './assets/smile.svg';
+import triangleUpSvg from './assets/triangle-up.svg';
+import triangleDownSvg from './assets/triangle-down.svg';
+
 
 function App() {
   return (
@@ -77,8 +80,34 @@ function App() {
             </Board>
           </Box>
 
-          <Board title="Title example" align="start">
-            Content
+          <Board title="Vendas por dia da semana" align="start">
+            <Box direction="column" gap="16">
+              <Box gap="10">
+                <img src={triangleUpSvg} alt="triangle green up" />
+
+                <Text weight="medium">
+                  Dia com mais vendas
+                </Text>
+              </Box>
+
+              <Heading>
+                quarta-feira
+              </Heading>
+            </Box>
+
+            <Box direction="column" gap="16">
+              <Box gap="10">
+                <img src={triangleDownSvg} alt="triangle red down" />
+
+                <Text weight="medium">
+                  Dia com menos vendas
+                </Text>
+              </Box>
+
+              <Heading>
+                domingo
+              </Heading>
+            </Box>
           </Board>
         </Box>
       </Content>
