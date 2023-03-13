@@ -19,5 +19,8 @@ export const CircleProgressContent = styled('div', {
 });
 
 export const CircleProgressValue = styled('span', {
-
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
 });
