@@ -19,7 +19,12 @@ function App() {
     <Container>
       <Content>
         <Box direction="column" gap="60">
-          <Box justify="between" align="stretch" gap="32">
+          <Box
+            justify="between"
+            align="stretch"
+            gap="32"
+            css={{ flexWrap: 'wrap', '@lg': { flexWrap: 'nowrap' } }}
+          >
             <Board title="NPS geral">
               <Box direction="column" justify="center" align="center" gap="16">
                 <img src={smileSvg} alt="smile face" />
@@ -40,7 +45,7 @@ function App() {
             <Board title="Vendas fechadas">
               <CircleProgress />
 
-              <Box gap="20">
+              <Box gap="20" wrap="wrap" justify="center">
                 <Box gap="10">
                   <Box gap="6" align="center">
                     <img src={ellipseDark} alt="ellipse dark" />
@@ -68,7 +73,7 @@ function App() {
             <Board title="Meta mensal">
               <CircleProgress />
 
-              <Box gap="20">
+              <Box gap="20" wrap="wrap" justify="center">
                 <Box gap="10">
                   <Box gap="6" align="center">
                     <img src={ellipseDark} alt="ellipse dark" />
