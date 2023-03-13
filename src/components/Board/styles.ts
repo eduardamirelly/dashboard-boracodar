@@ -8,7 +8,7 @@ export const BoardContainer = styled('div', {
   paddingBlock: '3rem',
   paddingInline: '2rem',
 
-  minWidth: '296px',
+  minWidth: '250px',
   width: '100%',
 
   display: 'flex',
