@@ -25,6 +25,11 @@ export const Box = styled('div', {
         alignItems: 'stretch',
       },
     },
+    wrap: {
+      wrap: {
+        flexWrap: 'wrap',
+      },
+    },
     gap: {
       6: {
         gap: '.375rem',
