@@ -19,6 +19,9 @@ export const HeadingStyles = styled('span', {
       semibold: {
         fontWeight: 600,
       },
+      bold: {
+        fontWeight: 700,
+      },
     },
   },
 });

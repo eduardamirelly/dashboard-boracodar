@@ -6,7 +6,7 @@ import { HeadingStyles } from './styles';
 
 interface HeadingProps {
   size?: '24' | '32';
-  weight?: 'semibold' | 'medium';
+  weight?: 'bold' | 'semibold' | 'medium';
   children: ReactNode;
   asChild?: boolean;
   css?: Stitches.CSS;
