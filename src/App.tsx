@@ -43,7 +43,7 @@ function App() {
               </Box>
             </Board>
             <Board title="Vendas fechadas">
-              <CircleProgress />
+              <CircleProgress percentage={70} />
 
               <Box gap="20" wrap="wrap" justify="center">
                 <Box gap="10">
@@ -71,7 +71,7 @@ function App() {
               </Box>
             </Board>
             <Board title="Meta mensal">
-              <CircleProgress />
+              <CircleProgress percentage={90} />
 
               <Box gap="20" wrap="wrap" justify="center">
                 <Box gap="10">
