@@ -1,19 +1,28 @@
+import { Box } from "../Box";
 import { Heading } from "../Heading";
 import { Text } from "../Text";
-import { CircleProgressContainer, CircleProgressContent, CircleProgressValue } from "./styles";
+import { CircleProgressContainer, CircleProgressContent, CircleProgressPercentage, CircleProgressValue } from "./styles";
 
-export function CircleProgress() {
+interface CircleProgressProps {
+  percentage: number;
+}
+
+export function CircleProgress({ percentage }: CircleProgressProps) {
   return (
     <CircleProgressContainer>
       <CircleProgressContent>
-        <CircleProgressValue>
-          <Heading size="32" weight="bold">
-            44%
-          </Heading>
-          <Text size="16">
-            alcançada
-          </Text>
-        </CircleProgressValue>
+        <CircleProgressPercentage>
+          <CircleProgressValue>
+            <Box direction="column" justify="center" align="center">
+              <Heading size="32" weight="bold">
+                {percentage}%
+              </Heading>
+              <Text size="16">
+                alcançada
+              </Text>
+            </Box>
+          </CircleProgressValue>
+        </CircleProgressPercentage>
       </CircleProgressContent>
     </CircleProgressContainer>
   )
