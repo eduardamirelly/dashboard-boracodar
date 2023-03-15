@@ -10,8 +10,8 @@ import smileSvg from './assets/smile.svg';
 import triangleUpSvg from './assets/triangle-up.svg';
 import triangleDownSvg from './assets/triangle-down.svg';
 import ellipseDark from './assets/ellipse-dark.svg';
-import ellipseViolet from './assets/ellipse-violet.svg';
 import ellipsePurple from './assets/ellipse-purple.svg';
+import ellipseRed from './assets/ellipse-red.svg';
 
 
 function App() {
@@ -59,7 +59,7 @@ function App() {
                 </Box>
                 <Box gap="10">
                   <Box gap="6" align="center">
-                    <img src={ellipseViolet} alt="ellipse dark" />
+                    <img src={ellipseRed} alt="ellipse dark" />
                     <Text weight="medium">
                       Alcançado
                     </Text>
@@ -71,7 +71,7 @@ function App() {
               </Box>
             </Board>
             <Board title="Meta mensal">
-              <CircleProgress percentage={90} />
+              <CircleProgress percentage={90} color="redLight" />
 
               <Box gap="20" wrap="wrap" justify="center">
                 <Box gap="10">
