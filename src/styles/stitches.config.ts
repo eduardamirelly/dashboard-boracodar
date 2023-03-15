@@ -20,6 +20,8 @@ export const { css, styled, theme } = createStitches({
       violetLight: '#d9d9ff1a',
       white: '#ffffff',
       green: '#81FBB8',
+      purpleLight: '#CE9FFC',
+      redLight: '#DF9780',
     },
   },
   media: {
