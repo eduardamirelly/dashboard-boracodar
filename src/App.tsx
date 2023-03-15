@@ -59,7 +59,7 @@ function App() {
                 </Box>
                 <Box gap="10">
                   <Box gap="6" align="center">
-                    <img src={ellipseRed} alt="ellipse dark" />
+                    <img src={ellipsePurple} alt="ellipse dark" />
                     <Text weight="medium">
                       Alcançado
                     </Text>
@@ -87,7 +87,7 @@ function App() {
                 </Box>
                 <Box gap="10">
                   <Box gap="6" align="center">
-                    <img src={ellipsePurple} alt="ellipse dark" />
+                    <img src={ellipseRed} alt="ellipse dark" />
                     <Text weight="medium">
                       Alcançado
                     </Text>
