@@ -12,6 +12,7 @@ import triangleDownSvg from './assets/triangle-down.svg';
 import ellipseDark from './assets/ellipse-dark.svg';
 import ellipsePurple from './assets/ellipse-purple.svg';
 import ellipseRed from './assets/ellipse-red.svg';
+import WeekProgress from "./components/WeekProgress"
 
 
 function App() {
@@ -101,34 +102,38 @@ function App() {
           </Box>
 
           <Board title="Vendas por dia da semana" align="start">
-            <Box direction="column" gap="20">
-              <Box direction="column" gap="16">
-                <Box gap="10">
-                  <img src={triangleUpSvg} alt="triangle green up" />
+            <Box css={{ width: '100%' }} justify="between">
+              <Box direction="column" gap="20">
+                <Box direction="column" gap="16">
+                  <Box gap="10">
+                    <img src={triangleUpSvg} alt="triangle green up" />
 
-                  <Text weight="medium">
-                    Dia com mais vendas
-                  </Text>
+                    <Text weight="medium">
+                      Dia com mais vendas
+                    </Text>
+                  </Box>
+
+                  <Heading>
+                    quarta-feira
+                  </Heading>
                 </Box>
 
-                <Heading>
-                  quarta-feira
-                </Heading>
-              </Box>
+                <Box direction="column" gap="16">
+                  <Box gap="10">
+                    <img src={triangleDownSvg} alt="triangle red down" />
 
-              <Box direction="column" gap="16">
-                <Box gap="10">
-                  <img src={triangleDownSvg} alt="triangle red down" />
+                    <Text weight="medium">
+                      Dia com menos vendas
+                    </Text>
+                  </Box>
 
-                  <Text weight="medium">
-                    Dia com menos vendas
-                  </Text>
+                  <Heading>
+                    domingo
+                  </Heading>
                 </Box>
-
-                <Heading>
-                  domingo
-                </Heading>
               </Box>
+
+              <WeekProgress />
             </Box>
           </Board>
         </Box>
