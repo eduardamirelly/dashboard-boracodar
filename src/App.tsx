@@ -101,32 +101,34 @@ function App() {
           </Box>
 
           <Board title="Vendas por dia da semana" align="start">
-            <Box direction="column" gap="16">
-              <Box gap="10">
-                <img src={triangleUpSvg} alt="triangle green up" />
+            <Box direction="column" gap="20">
+              <Box direction="column" gap="16">
+                <Box gap="10">
+                  <img src={triangleUpSvg} alt="triangle green up" />
 
-                <Text weight="medium">
-                  Dia com mais vendas
-                </Text>
+                  <Text weight="medium">
+                    Dia com mais vendas
+                  </Text>
+                </Box>
+
+                <Heading>
+                  quarta-feira
+                </Heading>
               </Box>
 
-              <Heading>
-                quarta-feira
-              </Heading>
-            </Box>
+              <Box direction="column" gap="16">
+                <Box gap="10">
+                  <img src={triangleDownSvg} alt="triangle red down" />
 
-            <Box direction="column" gap="16">
-              <Box gap="10">
-                <img src={triangleDownSvg} alt="triangle red down" />
+                  <Text weight="medium">
+                    Dia com menos vendas
+                  </Text>
+                </Box>
 
-                <Text weight="medium">
-                  Dia com menos vendas
-                </Text>
+                <Heading>
+                  domingo
+                </Heading>
               </Box>
-
-              <Heading>
-                domingo
-              </Heading>
             </Box>
           </Board>
         </Box>
