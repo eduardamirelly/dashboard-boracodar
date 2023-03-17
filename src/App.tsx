@@ -102,7 +102,7 @@ function App() {
           </Box>
 
           <Board title="Vendas por dia da semana" align="start">
-            <Box css={{ width: '100%' }} justify="between">
+            <Box css={{ width: '100%' }} justify="between" wrap="wrap" gap="60">
               <Box direction="column" gap="20">
                 <Box direction="column" gap="16">
                   <Box gap="10">
