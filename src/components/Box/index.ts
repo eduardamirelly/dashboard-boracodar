@@ -24,6 +24,9 @@ export const Box = styled('div', {
       stretch: {
         alignItems: 'stretch',
       },
+      end: {
+        alignItems: 'flex-end',
+      },
     },
     wrap: {
       wrap: {
