@@ -1,5 +1,16 @@
+import { Box } from "../Box";
+import WeekDayBar from "./components/WeekDayBar";
+
 export default function WeekProgress() {
   return (
-    <h1>WeekProgress</h1>
+    <Box gap="64">
+      <WeekDayBar />
+      <WeekDayBar />
+      <WeekDayBar />
+      <WeekDayBar />
+      <WeekDayBar />
+      <WeekDayBar />
+      <WeekDayBar />
+    </Box>
   )
 }
